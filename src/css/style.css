@@ -1,0 +1,25 @@
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.gray {
+    color: gray;
+}
+
+.topic {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+
+.johncena{
+    height: 50px;
+}
+
+.user {
+    background-color: #ccc;
+    padding: 5px;
+    border: 1px solid #fff;
+}

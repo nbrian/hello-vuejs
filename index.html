@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <title>Hello Vuejs</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="topic">
+            <h1>{{ title }}</h1>
+            <button id="trigger" v-on:click="changeTitle()">Change Title</button>
+        </div>
+
+        <div class="topic">
+            <p>Change class name</p>
+            <input type="text" v-on:input="cssClass = $event.target.value">
+
+            <p v-bind:class="cssClass">
+                {{cssClass}}
+            </p>
+        </div>
+
+        <div class="topic">
+            <button v-on:click="increment">Increment</button>
+            <p>Counter: {{ counter }}</p>
+            <p>Clicks: {{ clicks }}</p>
+        </div>
+
+        <div class="topic">
+            <button v-on:click="show = !show">You</button>
+            <p v-if="show">Huh?</p>
+            <p v-else="!show">Can't see me</p>
+            <p v-show="!show"><img class="johncena"  src="./assets/cantseeme.gif" alt="Can't see me" /></p>
+        </div>
+
+        <div class="topic">
+            <li v-for="(person, index) in persons">
+                {{index}} - {{ person.name }}
+            </li>
+        </div>
+
+        <div class="topic">
+            <p>{{ title | uppercase | lowercase }}</p>
+            <p>{{ message | uppercase }}</p>
+        </div>
+
+        <div class="topic">
+            <app-user></app-user>
+            <app-user></app-user>
+        </div>
+    </div>
+    <script src="./src/js/app.js"></script>
+
+</body>
+
+</html>

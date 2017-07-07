@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+body{
+    background: #fff;
+}
+
+#app > *{
+    margin: 10px;
+}
+h1 {
+    text-decoration: underline;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #ccc;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+input {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#container {
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 500px;
+}
